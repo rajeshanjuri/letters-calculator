@@ -1,0 +1,86 @@
+/* Write your code here. */
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  background-size: cover;
+  height: 100vh;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .body-container {
+    flex-direction: row;
+  }
+}
+
+.calculator-bg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .calculator-bg-container {
+    align-items: flex-start;
+    order: 0;
+  }
+}
+
+.title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 34px;
+  font-family: 'Roboto';
+}
+
+.input-phrase-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-phrase {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.inputElement {
+  background-color: #219a6f;
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-radius: 4px;
+  width: 250px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #ffffff;
+}
+
+.letters-Count {
+  background-color: #ffffff;
+  color: #219a6f;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.calculator-image {
+  height: 300px;
+  width: 400px;
+  order: 0;
+}
